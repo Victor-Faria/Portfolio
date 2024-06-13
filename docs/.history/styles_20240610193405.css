@@ -13,22 +13,22 @@
 
 @font-face {
   font-family: "Liber";
-  src: url("./assets/Fonts/LiberGrotesqueFamily-Regular.woff2") format("woff2"),
-    url("./assets/Fonts/LiberGrotesqueFamily-Regular.woff") format("woff"),
-    url("./assets/Fonts/LiberGrotesqueFamily-Regular.ttf") format("ttf");
+  src: url("../assets/Fonts/LiberGrotesqueFamily-Regular.woff2") format("woff2"),
+    url("../assets/Fonts/LiberGrotesqueFamily-Regular.woff") format("woff"),
+    url("../assets/Fonts/LiberGrotesqueFamily-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "hero";
-  src: url(./assets/Fonts/Exodar-Outline.ttf) format("ttf"),
-    url(./assets/Fonts/Exodar-Outline.woff) format("woff"),
-    url(./assets/Fonts/Exodar-Outline.woff2) format("woff2");
+  src: url(../assets/Fonts/Exodar-Outline.ttf) format("ttf"),
+    url(../assets/Fonts/Exodar-Outline.woff) format("woff"),
+    url(../assets/Fonts/Exodar-Outline.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "slogan";
-  src: url(./assets/Fonts/Bank\ Gothic\ Medium.ttf) format("ttf"),
-    url(./assets/Fonts/Bank\ Gothic\ Medium.woff) format("woff"),
-    url(./assets/Fonts/Bank\ Gothic\ Medium.woff2) format("woff2");
+  src: url(../assets/Fonts/Bank\ Gothic\ Medium.ttf) format("ttf"),
+    url(../assets/Fonts/Bank\ Gothic\ Medium.woff) format("woff"),
+    url(../assets/Fonts/Bank\ Gothic\ Medium.woff2) format("woff2");
 }
 
 * {
