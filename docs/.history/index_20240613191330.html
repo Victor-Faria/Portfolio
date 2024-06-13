@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8860f5ef88.js"
+      crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="background.js" defer></script>
+    <script src="text-animation.js" defer></script>
+    <script src="videoplayer.js" defer></script>
+    <script src="today.js" defer></script>
+    <script src="loading.js" defer></script>
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div id="loading-grid"></div>
+      <div id="page-title">
+        <img src="./assets/images/logo-no-bg.png" alt="" />
+      </div>
+    </div>
+    <!------------------- HEADER ---------------------->
+
+    <header id="header">
+      <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim"></div>
+      </div>
+      <div class="hamburgermenu">
+        <div class="hambtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="hamitens">
+          <ul>
+            <li>
+              <a href="#header" data-translate=" / / inicio">/ / home</a>
+            </li>
+            <li>
+              <a href="#about" data-translate=" / / sobre">/ / about</a>
+            </li>
+            <li>
+              <a href="#projects" data-translate=" / / projetos"
+                >/ / projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" data-translate=" / / contato">/ / contact</a>
+            </li>
+            <div class="navbtnhamb">
+              <button
+                class="translatebtn"
+                data-translate="Translate to English">
+                Traduzir para Português
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="navbar" id="nav">
+        <div class="logoholder">
+          <a href="#header">
+            <img src="./assets/images/logo-no-bg.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="navcenter">
+          <li class="navclick">
+            <a href="#header" data-translate=" / / inicio">/ / home</a>
+          </li>
+          <li class="navclick">
+            <a href="#about" data-translate=" / / sobre">/ / about</a>
+          </li>
+          <li class="navclick">
+            <a href="#projects" data-translate=" / / projetos">/ / projects</a>
+          </li>
+          <li class="navclick">
+            <a href="#contact" data-translate=" / / contato">/ / contact</a>
+          </li>
+        </ul>
+        <ul class="links">
+          <li>
+            <a href="https://github.com/victor-faria" target="_blank">
+              <i class="fa-brands fa-github icon"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/victor-teixeira-faria-182425191/"
+              target="_blank">
+              <i class="fa-brands fa-linkedin icon"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="navbtn">
+          <button class="translatebtn" data-translate="Translate to English">
+            Traduzir para Português
+          </button>
+        </div>
+      </nav>
+
+      <!--------------------- HERO ------------------------->
+      <div class="hero">
+        <div class="title-hero">
+          <h1>victor faria</h1>
+        </div>
+        <div class="slogan">
+          <h2 data-translate="Transformando seus sonhos em código">
+            Making your dreams into code
+          </h2>
+        </div>
+
+        <div class="gif">
+          <img src="./assets/images/scroll-down-mouse.webp" />
+        </div>
+      </div>
+    </header>
+
+    <!--------------------- ABOUT ------------------------->
+
+    <section class="about" id="about">
+      <div class="title-about">
+        <h1 data-translate="Sobre mim">About me</h1>
+      </div>
+      <div class="container-about">
+        <div class="introducao">
+          <h2 data-translate="Oi! Eu sou o Victor.">Hi! I am Victor.</h2>
+        </div>
+        <div
+          id="abouttxt"
+          data-translate=" &lt;p> I am a passionate and dedicated Front-end Developer, specializing in creating engaging and functional user interfaces for small and medium-sized businesses. Currently, i am seeking to work on projects as a Freelancer, aiming to build my experience through direct contact with clients. My background in Pedagogy from UNICAMP and experiences in the teaching field provides me with communication skills and empathy work with my clients while offering a great costumer service. I am committed to delivering high-quality work, whether developing new websites from scratch or improving existing platforms. Get in touch and lets build something great together! &lt;/p> "
+          data-no-effect="true">
+          &lt;p> Sou um Desenvolvedor Front-end apaixonado e dedicado,
+          especializado em criar interfaces de usuário envolventes e funcionais
+          para pequenas e médias empresas. Atualmente, estou buscando trabalhar
+          em projetos como Freelancer, visando construir minha experiência
+          através do contato direto com os clientes. Minha formação em Pedagogia
+          pela UNICAMP e experiências na área de ensino me proporcionam
+          habilidades de comunicação e empatia para trabalhar oferecendo um
+          ótimo atendimento ao cliente. Estou comprometido em entregar trabalhos
+          de alta qualidade, seja desenvolvendo novos sites do zero ou
+          melhorando plataformas existentes. Entre em contato e vamos construir
+          algo juntos! &lt;/p>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------- SKILLS & ABILITIES ------------------------->
+
+    <section class="skills">
+      <div class="title-wrapper">
+        <h1 data-translate="Habilidades & Capacidades">Skills & Abilities</h1>
+      </div>
+      <div class="container-skills">
+        <div class="a1">
+          <i class="fa-brands fa-html5 fa-2xl"></i>
+          <h2>HTML</h2>
+          <span
+            data-translate="HyperText Markup Language é a linguagem padrão para documentos a serem exibidos em uma pagina."
+            data-no-effect="true"
+            >HyperText Markup Language is the standard markup language for
+            documents designed to be displayed in a web browser.</span
+          >
+        </div>
+        <div class="a2">
+          <i class="fa-brands fa-css3-alt fa-2xl"></i>
+          <h2>CSS</h2>
+          <span
+            data-translate="Cascading Style Sheets é uma linguagem  estilização usada para especificar a apresentação e o estilo de um documento."
+            data-no-effect="true"
+            >Cascading Style Sheets is a styling language used to specify the
+            presentation and style of a document.</span
+          >
+        </div>
+        <div class="a3">
+          <i class="fa-brands fa-js fa-2xl"></i>
+          <h2>Javascript</h2>
+          <span
+            data-translate="JavaScript é uma linguagem de funcionamento, interpretada ou compilada dinâmicamente para execução de ferramentas em um navegador."
+            data-no-effect="true"
+            >JavaScript is a functional language, interpreted or dynamically
+            compiled for executing tools in a browser.</span
+          >
+        </div>
+        <div class="a4">
+          <h2>Figma</h2>
+          <span
+            data-translate="Figma é uma aplicação web colaborativa para design de interfaces, com recursos adicionais offline habilitados por aplicativos para desktop para macOS e Windows."
+            data-no-effect="true"
+            >Figma is a collaborative web application for interface design, with
+            additional offline features enabled by desktop applications for
+            macOS and Windows.</span
+          >
+          <img src="./assets/images/figmaicon.svg" alt="" class="skillsicon" />
+        </div>
+        <div class="a5">
+          <h2>Tailwind</h2>
+          <span
+            data-translate="Tailwind CSS é um framework CSS de utilitários para construir rapidamente sites modernos sem precisar sair do seu HTML."
+            data-no-effect="true"
+            >Tailwind CSS is a utility-first CSS framework for rapidly building
+            modern websites without ever leaving your HTML.</span
+          >
+          <img
+            src="./assets/images/Tailwind CSS.svg"
+            alt=""
+            class="skillsicon" />
+        </div>
+        <div class="a6">
+          <h2>Vite</h2>
+          <span
+            data-translate="Vite é uma ferramenta de frontend agnóstica de plataforma para construir aplicações rapidamente e resolver alguns problemas comuns de desenvolvedores."
+            data-no-effect="true"
+            >Vite is a platform-agnostic frontend tool for building web
+            applications quickly and solves some common developer
+            headaches.</span
+          >
+          <img src="./assets/images/Vite.js.svg" alt="" class="skillsicon" />
+        </div>
+      </div>
+    </section>
+
+    <!--------------------- PROJECTS ------------------------->
+
+    <section class="projects" id="projects">
+      <div class="title-wrapper">
+        <h1 data-translate="Projetos">Projects</h1>
+        <div class="tipbox">
+          <span class="tip" data-translate="Dica">Tip</span>
+          <span
+            class="tipcontent"
+            data-translate="Clique em qualquer lugar para ativar o video dos projetos"
+            data-no-effect="true"
+            >click anywere to enable project video player</span
+          >
+        </div>
+      </div>
+      <div class="container-projects">
+        <div class="card1">
+          <div class="project-name">
+            <h2>Victor's Secret</h2>
+          </div>
+          <div class="card-content">
+            <a href="#about">
+              <div class="card-video">
+                <video
+                  src="./assets/images/victorsecretvideo.mp4"
+                  class="video"
+                  poster="./assets/images/victorssecret.png"
+                  loop></video>
+              </div>
+              <span
+                class="span1"
+                data-translate="Meu último projeto, feito enquanto aprendia TailwindCSS e Jquery."
+                data-no-effect="true"
+                >My latest Project, made while learning TailwindCSS and
+                Jquery.</span
+              >
+              <div class="showproject" data-translate="/ / Mostrar Projeto">
+                / / Show Project
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="project-name">
+            <h2>Pokedex</h2>
+          </div>
+          <div class="card-content">
+            <a href="">
+              <div class="card-video">
+                <video
+                  src="./assets/images/pokedexvideo.mp4"
+                  class="video" 
+                  poster="./assets/images/pokedex.png"
+                  loop></video>
+              </div>
+              <span
+                class="span1"
+                data-translate="Uma pokedex feita enquanto aprendia a usar APIs."
+                data-no-effect="true"
+                >A pokedex made while learning to use APIs</span
+              >
+              <div class="showproject" data-translate="/ / Mostrar Projeto">
+                / / show project
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card3">
+          <div class="project-name">
+            <h2>Mario VS Pac</h2>
+          </div>
+          <div class="card-content">
+            <a href="">
+              <div class="card-video">
+                <video
+                  src="./assets/images/mariovideo.mp4"
+                  class="video"
+                  poster="./assets/images/mario.png"
+                  loop></video>
+              </div>
+              <span
+                class="span1"
+                data-translate="Mario VS Pac é um jogo simples feito por mim usando HTML, CSS e Javascript para solidificar meus conhecimentos em Jquery e Local Storage."
+                data-no-effect="true"
+                >Mario VS Pac is a simple game made on my own, using HTML, CSS
+                and Javascript to solidify my knowledge on JS and Local
+                Storage.</span
+              >
+              <div class="showproject" data-translate="/ / Mostrar Projeto">
+                / / show project
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card4">
+          <div class="project-name">
+            <h2 data-translate="Engine">Engine</h2>
+          </div>
+          <div class="card-content">
+            <a href="">
+              <div class="card-video">
+                <video
+                  src="./assets/images/enginevideo.mp4"
+                  class="video"
+                  poster="./assets/images/engine.png"
+                  loop></video>
+              </div>
+              <span
+                class="span1"
+                data-translate="Um projeto feito enquanto aprendia a usar JavaScript, baseado na página da Steam, apresenta carrosséis com um design simples."
+                data-no-effect="true"
+                >A project made while learning to use JavaScript, based on Steam
+                Webpage, features carousels with a simple design.</span
+              >
+              <div class="showproject" data-translate="/ / Mostrar Projeto">
+                / / show project
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card5">
+          <div class="project-name">
+            <h2 data-translate="Em breve...">Comming up...</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------- CONTACT ------------------------->
+
+    <section class="container-contact" id="contact">
+      <div class="title-wrapper">
+        <h1 data-translate="Entre em Contato">Get in touch</h1>
+      </div>
+      <div class="contact-containers">
+        <div class="container-left">
+          <div class="container-left-text">
+          <h2 data-translate="Disponivel para projetos freelance">
+            Available for freelance projects
+          </h2>
+          </div>
+          <div>
+          <h3
+            data-translate="Tem um projeto que precisa de ajuda? Me mande um email ou entre em contato comigo através da sua plataforma de freelancers!"
+            data-no-effect="true">
+            Have a project you need help with? Send me an email or contact me
+            via your freelance platform!
+          </h3>
+          </div class="container-left-text">
+          <div class="email">
+            <i class="fa-solid fa-envelope icon"></i>
+            <a
+              href="mailto:victortfaria05@gmail.com"
+              class="emailtxt"
+              data-translate="victortfaria05@gmail.com"
+              >victortfaria05@gmail.com</a
+            >
+          </div>
+          <span data-translate="test" class="none">.</span>
+        </div>
+        <div class="container-right">
+          <div class="finalicons">
+            <a href="https://github.com/victor-faria" target="_blank">
+              <i class="fa-brands fa-github icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/victor-teixeira-faria-182425191/"
+              target="_blank">
+              <i class="fa-brands fa-linkedin icon"></i>
+            </a>
+          </div>
+          <div class="finalme">
+            <div class="finalmeimg">
+              <img src="./assets/images/finalme.png" alt="imageofme" />
+            </div>
+            <div class="finalmetxt">
+              <span
+                data-translate="Atualmente moro em Campinas, São Paulo e tenho 26 anos. Após me formar recentemente na UNICAMP em Pedagogia, decidi mudar meu foco para o desenvolvimento web devido à minha grande paixão pela tecnologia. Desde o início de 2024, tenho me dedicado ao aprendizado, principalmente por meio de cursos da Udemy e experiência autodidata. Tenho como objetivo tornar-me um desenvolvedor Front-end experiente no campo freelance e construir minhas habilidades por meio do contato direto com os clientes."
+                data-no-effect="true"
+                >Currently, I live in Campinas, São Paulo, and I am 26 years
+                old. After recently graduating from UNICAMP with a degree in
+                Pedagogy, I decided to shift my focus to web development due to
+                my longstanding passion for technology. Since the beginning of
+                2024, I have been dedicating myself to learning web development,
+                primarily through Udemy courses and self-taught experience. My
+                goal is to become an experienced Front-end developer in the
+                freelance field and build my skillset through direct contact
+                with clients.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="finalmessage">
+        <span class="today"></span>
+      </div>
+      <div class="backtotop">
+        <a class="backtotopbtn" href="#header">
+          <i class="fa-solid fa-up-long"></i>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
