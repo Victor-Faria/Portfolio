@@ -10,7 +10,7 @@ $('.translatebtn').click(function() {
  
     isTranslatedFinal = !isTranslatedFinal;
 
-   
+    // Obtém o nome do dia atual
     let today = new Date().getDay();
     let dayName = isTranslatedFinal ? diasDaSemana[today] : daysOfTheWeek[today];
 

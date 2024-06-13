@@ -36,7 +36,7 @@ $('.translatebtn').click(function() {
     debounceTimeout = setTimeout(toggleLanguage, debounceTime);
 });
 
-
+// Armazena o texto original em cada elemento com atributo data-translate
 $('[data-translate]').each(function() {
     let $element = $(this);
     let originalText = $element.text().trim();

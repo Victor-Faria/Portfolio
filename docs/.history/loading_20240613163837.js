@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     pageTitle.style.left = `calc(50% - ${pageTitle.offsetWidth / 2}px)`;
     pageTitle.style.top = `calc(50% - ${pageTitle.offsetHeight / 2}px)`;
 
-    
+    // Função para alterar a cor de um quadrado aleatoriamente
     function changeColorRandomly() {
         var gridItems = document.querySelectorAll(".grid-item");
         for (let i = 0; i < gridItems.length; i++) {

@@ -27,7 +27,7 @@ function toggleLanguage() {
     }
 }
 
-
+// Manipulador de evento para o botão de tradução
 $('.translatebtn').click(function() {
     clearTimeout(debounceTimeout);
     clearInterval(interval);
@@ -36,7 +36,7 @@ $('.translatebtn').click(function() {
     debounceTimeout = setTimeout(toggleLanguage, debounceTime);
 });
 
-
+// Armazena o texto original em cada elemento com atributo data-translate
 $('[data-translate]').each(function() {
     let $element = $(this);
     let originalText = $element.text().trim();
