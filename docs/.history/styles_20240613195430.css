@@ -197,27 +197,34 @@ h3 {
   }
 }
 /* ------------------------- MOBILE HAMBURGER -------------------------- */
-.hambtn {
-  display: flex;
+.hamburgermenu {
+  display: none;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  height: 40%;
   width: 100%;
-  height: 5%;
-  cursor: pointer;
-  margin: 10px 0;
-  z-index: 99;
-  top: 0;
-
+  position: fixed;
+  top: 10%;
+  left: 0;
+  border-radius: 0px 0px 25px 25px;
+  
 }
-.hamspans{
+
+.hambtn {
+  
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 10%;
+  cursor: pointer;
+  margin: 10px 0;
+  
+  
 }
+
 .hambtn span {
   position: absolute;
   width: 10%;
@@ -225,6 +232,7 @@ h3 {
   background-color: white;
   transition: transform 0.6s, opacity 0.6s;
   border-radius: 25px;
+  
 }
 
 .hambtn span:nth-child(1) {
@@ -250,25 +258,25 @@ h3 {
 }
 
 .hamitens {
-  display: none;
+  transition: 0.6s all ease;
+  transform: translateX(-100%);
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40%;
+  height: 90%;
   width: 100%;
-  position: fixed;
-  top: 10%;
-  left: 0;
-  transform: translateX(-100%);
   background: var(--main-color);
   border-radius: 25px;
+  opacity: 0;
   z-index: 99;
+  
 }
 .hamitens.active {
-  display: flex;
   transition: all 0.6s ease;
   animation: slideIn 0.6s forwards;
   margin: 10px 0;
+  
 }
 .hamitens ul {
   display: flex;
@@ -283,7 +291,7 @@ h3 {
 .hamitens ul li {
   display: flex;
   height: 10%;
-  width: 50%;
+  width: 100%;
 }
 .hamitens ul li a {
   display: flex;
@@ -303,7 +311,7 @@ h3 {
   align-items: center;
   justify-content: center;
   height: 10%;
-  width: 50%;
+  width: 100%;
 }
 .hamitens button {
   height: 100%;
@@ -312,7 +320,7 @@ h3 {
   border-radius: 25px;
   border: 0;
   font-family: 'liber',sans-serif;
-  letter-spacing: 0.2vw;
+  letter-spacing: 0.5vw;
   
 }
 
@@ -436,7 +444,8 @@ nav ul li a {
   display: flex;
   align-items: end;
   justify-content: center;
-  height: 40%;
+  
+  height: 50%;
   width: 100%;
 }
 .title-hero h1 {
@@ -465,11 +474,14 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  
 }
 .gif img{
   height: 80%;
   width: 80%;
   object-fit: contain;
+ 
 }
 
 /* --------------------------- ABOUT --------------------------- */
@@ -1126,7 +1138,6 @@ nav ul li a {
   100% {
     transform: translateX(0%);
     opacity: 1;
-    z-index: 99;
     
   }
 }

@@ -35,9 +35,6 @@ $("#hamburgermenu").on("click", function() {
     if ($('.hamitens').hasClass('active')) {
       $('.hambtn span').css('background-color', 'red');
     }
-    else {
-      $('.hambtn span').css('background-color', 'white');
-    }
 
     $(this).toggleClass('active');
     console.log('clicked')
