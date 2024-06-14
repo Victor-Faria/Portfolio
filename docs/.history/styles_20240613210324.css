@@ -539,7 +539,7 @@ nav ul li a {
 #abouttxt {
   position: relative;
   font-family: monospace;
-  height: 80%;
+  height: 70%;
   background: transparent;
   color: var(--text-color);
   margin: 0 auto;
@@ -1229,10 +1229,6 @@ nav ul li a {
   .card-video {
     width: 100%;
   }
-  .container-about{
-    height: 90%;
-    width: 95%;
-  }
   .card1,
   .card2,
   .card3,
@@ -1290,4 +1286,16 @@ nav ul li a {
   .backtotop {
     opacity: 0.6;
   }
+}
+@media (max-width: 555px) {
+ 
+}
+
+@media (max-width: 425px) {
+
+
+
+}
+
+@media (max-width: 320px) {
 }
