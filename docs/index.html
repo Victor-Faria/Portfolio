@@ -16,18 +16,21 @@
     <script src="videoplayer.js" defer></script>
     <script src="today.js" defer></script>
     <script src="loading.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2N1PLFF0WW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-2N1PLFF0WW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-2N1PLFF0WW');
-</script>
+    gtag("config", "G-2N1PLFF0WW");
+  </script>
 
   <body>
     <div id="loading-screen">
@@ -49,37 +52,31 @@
           <span></span>
         </div>
       </div>
-      
-        <div class="hamburgermenu">
-          <ul>
-            <li>
-              <a href="#header" data-translate=" / / inicio">/ / home</a>
-            </li>
-            <li>
-              <a href="#about" data-translate=" / / sobre">/ / about</a>
-            </li>
-            <li>
-              <a href="#projects" data-translate=" / / projetos"
-                >/ / projects</a
-              >
-            </li>
-            <li>
-              <a href="#contact" data-translate=" / / contato">/ / contact</a>
-            </li>
-            <div class="navbtnhamb">
-              <button
-                class="translatebtn"
-                data-translate="Translate to English">
-                Traduzir para Português
-              </button>
-            </div>
-          </ul>
-        </div>
-        <div class="translatemobile">
-          <span class="translatebtn">EN / PT</span>
-        </div>
-        
-      
+
+      <div class="hamburgermenu">
+        <ul>
+          <li>
+            <a href="#header" data-translate=" / / inicio">/ / home</a>
+          </li>
+          <li>
+            <a href="#about" data-translate=" / / sobre">/ / about</a>
+          </li>
+          <li>
+            <a href="#projects" data-translate=" / / projetos">/ / projects</a>
+          </li>
+          <li>
+            <a href="#contact" data-translate=" / / contato">/ / contact</a>
+          </li>
+          <div class="navbtnhamb">
+            <button class="translatebtn" data-translate="Translate to English">
+              Traduzir para Português
+            </button>
+          </div>
+        </ul>
+      </div>
+      <div class="translatemobile">
+        <span class="translatebtn">EN / PT</span>
+      </div>
 
       <nav class="navbar" id="nav">
         <div class="logoholder">
@@ -176,16 +173,15 @@
       </div>
       <div class="container-skills">
         <div class="a1">
-          <i class="fa-brands fa-html5 fa-2xl "></i>
+          <i class="fa-brands fa-html5 fa-2xl"></i>
           <h2>HTML</h2>
-         
+
           <span
             data-translate="HyperText Markup Language é a linguagem padrão para documentos a serem exibidos em uma pagina."
             data-no-effect="true"
             >HyperText Markup Language is the standard markup language for
             documents designed to be displayed in a web browser.</span
           >
-        
         </div>
         <div class="a2">
           <i class="fa-brands fa-css3-alt fa-2xl"></i>
@@ -262,6 +258,96 @@
       </div>
       <div class="container-projects">
         <div class="card1">
+          <div class="featured">
+            <div class="star">
+              <i class="fa-regular fa-star" style="color: black;"></i>
+            </div>
+          </div>
+          <div class="project-name">
+            <h2>OdontoViver</h2>
+          </div>
+          <div class="card-content">
+            <a href="https://navajowhite-walrus-376252.hostingersite.com">
+              <div class="card-video">
+                <video
+                  src="./assets/images/odontovideo.mp4"
+                  class="video"
+                  poster="./assets/images/odonto.png"
+                  loop></video>
+              </div>
+              <span
+                class="span1"
+                data-translate="Meu primeiro projeto realizado em Wordpress  com Elementor Plugin"
+                data-no-effect="true"
+                >My first project made using Wordpress with Elementor
+                Plugin</span
+              >
+              <div class="showproject" data-translate="/ / Mostrar Projeto">
+                / / show project
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="featured">
+            <div class="star">
+              <i class="fa-regular fa-star" style="color: black;"></i>
+            </div>
+          </div>
+          <div class="project-name">
+            <h2>Cantinho Campineiro</h2>
+          </div>
+          <div class="card-content">
+            <a href="https://wheat-hornet-497057.hostingersite.com">
+              <div class="card-video">
+                <video
+                  src="./assets/images/cantinhovideo.mp4"
+                  class="video"
+                  poster="./assets/images/cantinho.png"
+                  loop></video>
+              </div>
+              <span
+                class="span1"
+                data-translate="Meu ultimo projeto realizado em Wordpress com Elementor Plugin"
+                data-no-effect="true"
+                >My latest project made using Wordpress with Elementor
+                Plugin</span
+              >
+              <div class="showproject" data-translate="/ / Mostrar Projeto">
+                / / show project
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card3">
+          <div class="project-name">
+            <h2>Engine</h2>
+          </div>
+          <div class="card-content">
+            <a href="https://victor-faria.github.io/Engine/">
+              <div class="card-video">
+                <video
+                  src="./assets/images/enginevideo.mp4"
+                  class="video"
+                  poster="./assets/images/engine.png"
+                  loop></video>
+              </div>
+              <span
+                class="span1"
+                data-translate="Um projeto feito enquanto aprendia a usar JavaScript, baseado na página da Steam, apresenta carrosséis com um design simples"
+                data-no-effect="true"
+                >A project made while learning to use JavaScript, based on Steam
+                Webpage, features carousels with a simple design</span
+              >
+              <div class="showproject" data-translate="/ / Mostrar Projeto">
+                / / show project
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card4">
           <div class="project-name">
             <h2>Victor's Secret</h2>
           </div>
@@ -276,10 +362,10 @@
               </div>
               <span
                 class="span1"
-                data-translate="Meu último projeto, feito enquanto aprendia TailwindCSS e Jquery."
+                data-translate="Meu último projeto feito em Html e Css  enquanto aprendia TailwindCSS e Jquery"
                 data-no-effect="true"
-                >My latest Project, made while learning TailwindCSS and
-                Jquery.</span
+                >My last Html/Css Project, made while learning TailwindCSS and
+                Jquery</span
               >
               <div class="showproject" data-translate="/ / Mostrar Projeto">
                 / / Show Project
@@ -288,7 +374,7 @@
           </div>
         </div>
 
-        <div class="card2">
+        <div class="card5">
           <div class="project-name">
             <h2>Pokedex</h2>
           </div>
@@ -303,7 +389,7 @@
               </div>
               <span
                 class="span1"
-                data-translate="Uma pokedex feita enquanto aprendia a usar APIs."
+                data-translate="Uma pokedex feita enquanto aprendia a usar APIs"
                 data-no-effect="true"
                 >A pokedex made while learning to use APIs</span
               >
@@ -313,113 +399,8 @@
             </a>
           </div>
         </div>
-
-        <div class="card3">
-          <div class="project-name">
-            <h2>Mario VS Pac</h2>
-          </div>
-          <div class="card-content">
-            <a href="https://victor-faria.github.io/Mario-VS-PAC/">
-              <div class="card-video">
-                <video
-                  src="./assets/images/mariovideo.mp4"
-                  class="video"
-                  poster="./assets/images/mario.png"
-                  loop></video>
-              </div>
-              <span
-                class="span1"
-                data-translate="Mario VS Pac é um jogo simples feito por mim usando HTML, CSS e Javascript para solidificar meus conhecimentos em Jquery e Local Storage."
-                data-no-effect="true"
-                >Mario VS Pac is a simple game made on my own, using HTML, CSS
-                and Javascript to solidify my knowledge on JS and Local
-                Storage.</span
-              >
-              <div class="showproject" data-translate="/ / Mostrar Projeto">
-                / / show project
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="card4">
-          <div class="project-name">
-            <h2 data-translate="Engine">Engine</h2>
-          </div>
-          <div class="card-content">
-            <a href="https://victor-faria.github.io/Engine/">
-              <div class="card-video">
-                <video
-                  src="./assets/images/enginevideo.mp4"
-                  class="video"
-                  poster="./assets/images/engine.png"
-                  loop></video>
-              </div>
-              <span
-                class="span1"
-                data-translate="Um projeto feito enquanto aprendia a usar JavaScript, baseado na página da Steam, apresenta carrosséis com um design simples."
-                data-no-effect="true"
-                >A project made while learning to use JavaScript, based on Steam
-                Webpage, features carousels with a simple design.</span
-              >
-              <div class="showproject" data-translate="/ / Mostrar Projeto">
-                / / show project
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="card5">
-          <div class="project-name">
-            <h2 data-translate="OdontoViver">OdontoViver</h2>
-          </div>
-          <div class="card-content">
-            <a href="https://navajowhite-walrus-376252.hostingersite.com">
-              <div class="card-video">
-                <video
-                  src="./assets/images/odontovideo.mp4"
-                  class="video"
-                  poster="./assets/images/odonto.png"
-                  loop></video>
-              </div>
-              <span
-                class="span1"
-                data-translate="Meu primeiro projeto realizado em Wordpress  com Elementor Plugin."
-                data-no-effect="true"
-                >My first project made using Wordpress with Elementor Plugin</span
-              >
-              <div class="showproject" data-translate="/ / Mostrar Projeto">
-                / / show project
-              </div>
-            </a>
-          </div>
-        </div>
         <div class="card6">
-          <div class="project-name">
-            <h2 data-translate="Cantinho Campineiro">Cantinho Campineiro</h2>
-          </div>
-          <div class="card-content">
-            <a href="https://wheat-hornet-497057.hostingersite.com">
-              <div class="card-video">
-                <video
-                  src="./assets/images/cantinhovideo.mp4"
-                  class="video"
-                  poster="./assets/images/cantinho.png"
-                  loop></video>
-              </div>
-              <span
-                class="span1"
-                data-translate="Meu ultimo projeto realizado em Wordpress com Elementor Plugin."
-                data-no-effect="true"
-                >My latest project made using Wordpress with Elementor Plugin</span
-              >
-              <div class="showproject" data-translate="/ / Mostrar Projeto">
-                / / show project
-              </div>
-            </a>
-          </div>
-        </div>
-
-        
+          <h2>Coming soon...</h2>
         </div>
       </div>
     </section>

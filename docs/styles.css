@@ -511,9 +511,7 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  
   height: 90%;
-  border: 2px solid var(--secondaryhex-color);
   border-radius: 25px;
   padding: 10px;
 }
@@ -560,7 +558,6 @@ nav ul li a {
 #abouttxt {
   position: relative;
   font-family: monospace;
-  
   height: 80%;
   background: transparent;
   color: var(--text-color);
@@ -568,7 +565,7 @@ nav ul li a {
   font-size: 1.2vmax;
   padding: 10px 0;
   line-height: 200%;
-  
+  text-align: start;
 }
 
 #cursor {
@@ -602,7 +599,10 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--secondary-containers);
+  background: url(./assets/images/bgskillsblur.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   border: 2px solid var(--secondaryhex-color);
   border-radius: 25px;
   
@@ -760,7 +760,7 @@ nav ul li a {
 }
 .container-projects {
   height: 120vh;
-  width: 100vw;
+  width: 90vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background: var(--main-color);
@@ -768,6 +768,7 @@ nav ul li a {
   align-items: center;
   gap: 10px;
   margin: 20px 0;
+  border-radius: 25px;
 }
 
 .tipbox {
@@ -805,8 +806,6 @@ nav ul li a {
   transition: 0.9s;
 }
 .project-name {
-  min-height: 20%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -814,8 +813,6 @@ nav ul li a {
   padding: 10px 0;
 }
 .card-content {
-  height: 80%;
-  width: 100%;
   padding: 10px;
 }
 .card-content a {
@@ -826,25 +823,27 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   color: var(--text-color);
-  letter-spacing: 0.05vw;
+  
 }
 .card-video {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card-video video {
-  height: 100%;
+.card-video .video {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+ 
 }
 .card-content span {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  width: 100%;
-  height: 20%;
+  text-align: start;
+  letter-spacing: 0.05vw;
+  
 }
 .card1,
 .card2,
@@ -857,7 +856,7 @@ nav ul li a {
   width: 90%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background: var(--secondary-containers);
   border: var(--secondaryhex-color) 2px solid;
   position: sticky;
@@ -868,6 +867,22 @@ nav ul li a {
   border-radius: 25px;
   box-shadow: 10px 10px 10px black;
   cursor: pointer;
+ 
+}
+.featured{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: yellow;
+  height: 5%;
+  width: 5%;
+  border-radius: 0 25px 0 5px;
+}
+.star{
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
 }
 
 
@@ -905,15 +920,15 @@ nav ul li a {
 
 .card4 {
   z-index: 2;
-  grid-column: 1/2;
+  
 }
 .card5 {
   z-index: 2;
-  grid-column: 2/3;
+  
 }
 .card6{
   z-index: 2;
-  grid-column: 3/4;
+  
 }
 
 /* --------------------------- CONTACT--------------------------- */
@@ -1255,14 +1270,14 @@ nav ul li a {
 
  
   .container-projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-  .card4,
-  .card5 {
-    grid-column: auto;
-  }
+  
   .finalmetxt {
     overflow-x: scroll;
+  }
+  .star{
+    font-size: 10px;
   }
 }
 
@@ -1290,6 +1305,7 @@ nav ul li a {
     line-height: 300%;
   }
   
+ 
   .card1,
   .card2,
   .card3,
