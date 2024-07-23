@@ -1093,14 +1093,13 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   width: 50%;
-  border-radius: 50%;
+  border-radius: 25px;
   border: 1px solid var(--border);
   margin: 10px 0;
 }
 .finalmeimg img {
- 
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 25px;
 }
 .finalmetxt {
   height: 50%;
